@@ -1,0 +1,37 @@
+17:04:57 **** Incremental Build of configuration Debug for project projectstm32rxtxinterrupt ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4A6xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "projectstm32rxtxinterrupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Machadev\Rapidev\stm_ws\projectstm32rxtxinterrupt\STM32L4A6ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="projectstm32rxtxinterrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: projectstm32rxtxinterrupt.elf
+ 
+arm-none-eabi-size  projectstm32rxtxinterrupt.elf 
+arm-none-eabi-objdump -h -S projectstm32rxtxinterrupt.elf  > "projectstm32rxtxinterrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  16812	     40	   1808	  18660	   48e4	projectstm32rxtxinterrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: projectstm32rxtxinterrupt.list
+ 
+17:05:09 **** Incremental Build of configuration Debug for project projectstm32rxtxinterrupt ****
+make -j8 all 
+arm-none-eabi-size  projectstm32rxtxinterrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16812	     40	   1808	  18660	   48e4	projectstm32rxtxinterrupt.elf
+Finished building: default.size.stdout
+ 
+17:06:41 **** Incremental Build of configuration Debug for project projectstm32rxtxinterrupt ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4A6xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4A6xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4A6xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc -o "projectstm32rxtxinterrupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Machadev\Rapidev\stm_ws\projectstm32rxtxinterrupt\STM32L4A6ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="projectstm32rxtxinterrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: projectstm32rxtxinterrupt.elf
+ 
+arm-none-eabi-size  projectstm32rxtxinterrupt.elf 
+arm-none-eabi-objdump -h -S projectstm32rxtxinterrupt.elf  > "projectstm32rxtxinterrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  16900	     40	   1808	  18748	   493c	projectstm32rxtxinterrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: projectstm32rxtxinterrupt.list
+ 

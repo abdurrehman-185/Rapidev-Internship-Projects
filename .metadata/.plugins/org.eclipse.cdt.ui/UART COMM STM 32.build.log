@@ -1,0 +1,12 @@
+15:45:21 **** Incremental Build of configuration Debug for project UART COMM STM 32 ****
+make -j8 all 
+arm-none-eabi-gcc -o "UART COMM STM 32.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Machadev\Rapidev\stm_ws\UART COMM STM 32\STM32L4A6ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART COMM STM 32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/st/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Startup/startup_stm32l4a6zgtx.o:(.isr_vector+0x0): multiple definition of `g_pfnVectors'; ./Core/Startup/Receiver Code.o:(.isr_vector+0x0): first defined here
+C:/st/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Startup/startup_stm32l4a6zgtx.o: in function `Default_Handler':
+D:/Machadev/Rapidev/stm_ws/UART COMM STM 32/Debug/../Core/Startup/startup_stm32l4a6zgtx.s:119: multiple definition of `Default_Handler'; ./Core/Startup/Receiver Code.o:D:/Machadev/Rapidev/stm_ws/UART COMM STM 32/Debug/../Core/Startup/Receiver Code.s:119: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: UART COMM STM 32.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+15:45:22 Build Failed. 3 errors, 0 warnings. (took 1s.207ms)
+
